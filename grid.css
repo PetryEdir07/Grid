@@ -1,0 +1,40 @@
+
+body{
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca cabeca"
+    "braco corpo corpo"
+    "perna perna perna";
+    grid-template-rows: 200px 600px 150px;
+    grid-template-columns: 200px auto auto;
+}
+header{
+    background-color: black;
+    grid-area: cabeca;
+    
+}
+main{
+    background-color: blue;
+    grid-area: corpo;
+}
+aside{
+    background-color: gray;
+    grid-area: braco;
+}
+footer{
+    background-color: darkred;
+    grid-area: perna;
+    
+}
+@media screen {
+    (max-width: 850px;)
+body
+    grid-template-areas:
+    "cabeca"
+    "braco"
+    "corpo"
+    "perna";
+    grid-template-columns: auto;
+    grid-template-rows: 150px 50px 500px 200px;
+}
+    
