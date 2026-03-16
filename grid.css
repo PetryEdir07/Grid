@@ -5,8 +5,8 @@ body{
     "cabeca cabeca cabeca"
     "braco corpo corpo"
     "perna perna perna";
-    grid-template-rows: 200px 600px 150px;
-    grid-template-columns: 200px auto auto;
+    grid-template-rows: 200px auto 250px;
+    grid-template-columns: 200px  ;
 }
 header{
     background-color: black;
@@ -16,6 +16,7 @@ header{
 main{
     background-color: blue;
     grid-area: corpo;
+    height: 800px;
 }
 aside{
     background-color: gray;
@@ -24,17 +25,50 @@ aside{
 footer{
     background-color: darkred;
     grid-area: perna;
+    height: auto;
     
 }
-@media screen {
-    (max-width: 850px;)
-body
+@media only screen and (max-width: 850px){
+body{
+      display: grid;
+    grid-template-areas:
+    "cabeca cabeca"
+    "braco braco"
+    "corpo corpo"
+    "perna perna";
+    grid-template-rows: 200px 50px auto 250px;
+    grid-template-columns: 80px auto;
+
+}
+}
+@media only screen and (max-width: 550px){
+body{
+      display: grid;
     grid-template-areas:
     "cabeca"
-    "braco"
     "corpo"
     "perna";
-    grid-template-columns: auto;
-    grid-template-rows: 150px 50px 500px 200px;
+    grid-template-rows: 150px auto 150px;
+    grid-template-columns: 550px ;
+
 }
-    
+}
+.ast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border: darkblue 2px solid;
+    background-color: yellow;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+.jogadores{
+    width: 300px;
+    height: auto;
+}
