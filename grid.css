@@ -72,9 +72,20 @@ body{
     height: auto;
 }
 .logo{
-    display: flex;
     width: 250px;
     padding: px;
     
+
+}
+.carrinho{
+    width: 50px;
+    height: 50px;
+    margin-left: 1500px;
+    padding: 50px;
+    
+}
+.head{
+ display: flex;
+ padding: 5px;
 
 }
